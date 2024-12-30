@@ -14,26 +14,30 @@
 //     alert(`the number is ${i}`)
 // }
 // //q4
-let num= prompt("Please enter a number between 0 and 100:" )
+// let num= prompt("Please enter a number between 0 and 100:" )
 
-if( 0 > num || num >100 ){
-    alert("invalid number! Please enter anumber detween 0 and 100:");
-    num= prompt("Please enter anumber detween 0 and 100:" );
+// if( 0 > num || num >100 ){
+//     alert("invalid number! Please enter anumber detween 0 and 100:");
+//     num= prompt("Please enter anumber detween 0 and 100:" );
+// }
+// else{
+//     alert(`the number is ${num}`);
+// }
+//q5------------------------------
+// let f=prompt("the num");
+
+
+let num=prompt('enter the number');
+
+if ( num <0  || isNaN(num) ){
+    alert('please enter valid value');
 }
 else{
-    alert(`the number is ${num}`);
+let sum=0;
+for(let i=0;i<=num;i++){
+    sum+=i  
 }
-//q5------------------------------
-let f=prompt("the num");
-
-
-// if(f%2==0){
-// console.log(f)
-// }
-// for(let i=0; i<=f;f++){
-// f+=i;
-// }
-
-
+alert(`the sum of number${num} is ${sum}`);
+}
 </script>
 </html>
