@@ -14,7 +14,7 @@
 // var s="zinger"
 // var d="burger"
 // var order = prompt(" write the name of the ord eshawarma, zinger, or burger. ");
- 
+
 // if(order===a)
 // {
 //     alert(`ypur order is ${a}`)
@@ -28,7 +28,6 @@
 // }
 
 // console.log(` ${name1}  your order is ${order}`)
-
 
 // // //Q2-------------------------------------------------------------------
 // // let numbers = parseInt(prompt("Please enter a number:"))
@@ -61,16 +60,26 @@
 // //     console.log("NINE");
 // //     break;
 
-
-// //   default: 
+// //   default:
 // //  console.log("AGAINE");
 // //     break;
 // // }
 
 
+// q1--------------------------------------------------------------------------------------
+// var name1 = prompt("Enter his/her name");
+// var gender=prompt( "enter his/her gender  (male or female)");
 
+// // if(gender==="male"){
+// //     alert("name mr:" + name1);
+// // }else if (gender==="female") {
+// //   alert("name ms:"+ name1);
+// // } else {
+// //     alert("welcome");
+// // }
+// gander1(gender);
+// ---------------------------------------------------------------------------------------
 // const user = [name1, gender, order];
-
 
 // for( let i=0;i<user.length ;i++){
 
@@ -90,29 +99,29 @@
 // q1------------------------------------------------------------------------------------
 // let x = prompt("enter the number");
 // function reverseNumber(number) {
-  
+
 //     const reversed = number.toString().split("").reverse().join("");
-    
+
 //      return (reversed) ;
 // }
 // const result = reverseNumber(x);
 // console.log("Reversed Number:", result);
 
 //g2---------------------------------------------------------------------------------------
-// let nam2=(prompt("enter the namber"))
-// for(let i=nam2 ; i<=15;i++){
-// if(nam2%2==0){
-// console.log("even");
 
-
-// }else{
-//   console.log("odd");
-// }
+// for (let i = 0; i <= 15; i++) {
+//   if (i % 2 == 0) {
+//     console.log(`${i} is even`);
+//   } else {
+//     console.log(`${i} is odd`);
+//   }
 // }
 // console.log(nam2);
 // q5-----------------------------------------------
-let age = prompt("enter the age");
-function Agechecker(age) {
-  return age >= 18 ? "The user is Adult" : "The user is Minor";
-}
-console.log(Agechecker(age));
+// let age = prompt("enter the age");
+// function Agechecker(age) {
+//   return age >= 18 ? "The user is Adult" : "The user is Minor";
+// }
+// console.log(Agechecker(age));
+
+ 

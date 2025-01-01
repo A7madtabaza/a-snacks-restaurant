@@ -5,12 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="task.css">
-      <script src="task.js"></script>
+      <!-- <script src="task.js"></script> -->
 </head>
 <body>
 
     <h1> A Snack restaurant</h1>
     <p>Enter their order</p>
+ <!-- EX4 DOM---------------------------------------- -->
+<div id="parent">
+  <p class="Name"></p>
+  <ol>
+    <li class="Gender"></li>
+    <li class="Age"></li>
+    <li class="Order"></li>
+  </ol>
+</div>
+
+<script>
+  let Name = prompt("Enter your name");
+
+  function askGender() {
+    let gender;
+    while (true) {
+      gender = prompt("Please enter your gender (male or female):");
+      if (gender === "male" || gender === "female") {
+        break;
+      }
+    }
+    return gender;
+  }
+
+  let Gender = askGender();
+  let Age = prompt("Enter your Age");
+  let Order = prompt("Enter your order");
+
+  if (Gender === "male") {
+    const element = document.getElementsByClassName("Name")[0];
+    element.textContent = `Welcome Mr. ${Name}`;
+  } else if (Gender === "female") {
+    const element = document.getElementsByClassName("Name")[0];
+    element.textContent = `Welcome Ms. ${Name}`;
+  }
+
+  let Gen = document.getElementsByClassName("Gender")[0];
+  Gen.textContent = `Your Gender: ${Gender}`;
+
+  let Ord = document.getElementsByClassName("Order")[0];
+  Ord.textContent = `Your order: ${Order}`;
+
+  let X = document.getElementsByClassName("Age")[0];
+  X.textContent = `Your Age: ${Age}`;
+</script>
+
 
 </body>
 </html>
